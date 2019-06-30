@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+
+#slides {
+  position: relative;
+  width: 2000px;
+  height: 200px;
+  margin: 0px;
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.showing {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+
+  padding: 0px;
+  box-sizing: border-box;
+  background: #333;
+  color: #fff;
+}
+
+.slide:nth-of-type(1),
+.slide:nth-of-type(6) {
+  background: #151515;
+}
+.slide:nth-of-type(2) {
+  background: linear-gradient(90.42deg, #EE3041 0.04%, #67060F 99.97%), linear-gradient(89.18deg, #151515 0.06%, #484848 99.94%);
+}
+.slide:nth-of-type(3) {
+  background: linear-gradient(89.18deg, #484848 0.06%, #151515 99.94%);
+}
+.slide:nth-of-type(4) {
+  background: linear-gradient(90.42deg, #EE3041 0.04%, #67060F 99.97%), linear-gradient(89.18deg, #151515 0.06%, #484848 99.94%), #FFFFFF;
+}
+.slide:nth-of-type(5) {
+  background: linear-gradient(89.18deg, #484848 0.06%, #151515 99.94%);
+}
+
+.white_chair_text {
+  width: 563px;
+  left: 20px;
+
+  font-family: Exo 2;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 52px;
+
+  color: #FFFFFF;
+
+  position: relative;
+  animation-name: opacity-text;
+  animation-duration: 2s;
+}
+
+.white_chair_img {
+  padding-left: 474px;
+
+  position: relative;
+  animation-name: move-bottom-top;
+  animation-duration: 1s;
+}
+
+.white_chair_logo {
+  width: 108px;
+  height: 125px;
+
+  position: relative;
+  animation-name: move-bottom-top;
+  animation-duration: 1s;
+}
+
+.office_chairs_text {
+  width: 577px;
+  padding-left: 501px;
+
+  font-family: Exo 2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 32px;
+
+  color: #FFFFFF;
+
+  position: relative;
+  animation-name: move-left-right;
+  animation-duration: 1s;
+  animation-delay: 3s;
+}
+
+.office_chairs_img {
+  width: 406px;
+  height: 200px;
+  padding-left: 65px;
+
+  position: relative;
+  animation-name: move-bottom;
+  animation-duration: 1s;
+  animation-delay: 3s;
+}
+
+.business_chairs_img {
+  width: 486px;
+  height: 200px;
+  padding-left: 449px;
+
+  position: relative;
+  animation-name: move-left-right;
+  animation-duration: 1s;
+  animation-delay: 5.8s;
+}
+
+.business_chairs_text {
+  width: 442px;
+  padding-left: 66px;
+
+  font-family: Exo 2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 38px;
+
+  color: #FFFFFF;
+
+  position: relative;
+  animation-name: opacity-text;
+  animation-duration: 2s;
+  animation-delay: 5.8s;
+}
+
+.business_chairs_logo {
+  width: 118px;
+  height: 136px;
+  padding-left: 36px;
+
+  position: relative;
+  animation-name: move-right-left ;
+  animation-duration: 1s;
+  animation-delay: 5.8s;
+}
+
+.child_chairs_logo {
+  padding-left: 373px;
+
+  position: relative;
+  animation-name: move-bottom-top;
+  animation-duration: 1s;
+  animation-delay: 8.7s;
+}
+
+.child_chairs_text {
+  width: 386px;
+  padding-left: 59px;
+
+  font-family: Exo 2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 38px;
+
+  color: #FFFFFF;
+
+  position: relative;
+  animation-name: opacity-text;
+  animation-duration: 2s;
+  animation-delay: 8.7s;
+}
+
+.child_chairs_img {
+  width: 528px;
+  height: 200px;
+  padding-left: 75px;
+
+  position: relative;
+  animation-name: move-bottom-top;
+  animation-duration: 1s;
+  animation-delay: 8.7s;
+}
+
+.gaming_chairs_img {
+  width: 534px;
+  height: 200px;
+  padding-left: 449px;
+
+  position: relative;
+  animation-name: move-left-right;
+  animation-duration: 1s;
+  animation-delay: 11.6s;
+}
+
+.gaming_chairs_text {
+  width: 359px;
+  padding-left: 83px;
+
+  font-family: Exo 2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 38px;
+
+  color: #FFFFFF;
+
+  position: relative;
+  animation-name: opacity-text;
+  animation-duration: 2s;
+  animation-delay: 11.6s;
+}
+
+.gaming_chairs_logo {
+  width: 118px;
+  height: 136px;
+  padding-left: 53px;
+
+  position: relative;
+  animation-name: move-top-bottom;
+  animation-duration: 1s;
+  animation-delay: 11.6s;
+}
+
+.contacts_text {
+  width: 741px;
+  padding-left: 57px;
+
+  font-family: Exo 2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+
+  position: relative;
+  animation-name: move-bottom-top-contacts;
+  animation-duration: 3.5s;
+  animation-delay: 15s;
+}
+
+.contacts_logo {
+  width: 118px;
+  height: 136px;
+  padding-left: 531px;
+
+  position: relative;
+  animation-name: move-bottom-top-contacts;
+  animation-duration: 3.5s;
+  animation-delay: 15s;
+}
+
+@keyframes move-bottom-top {
+  from {top: 50px;}
+  to {top: 0px;}
+}
+
+@keyframes move-bottom-top-contacts {
+  0% {top: -200px;}
+  25% {top: 0px;}
+  70% {top: 0px;}
+  100% {top: -200px;}
+}
+
+@keyframes move-top-bottom {
+  from {top: -200px;}
+  to {top: 0px;}
+}
+
+@keyframes opacity-text {
+  from {color: rgba(255, 255, 255, 0.1);}
+  to {color: #FFFFFF;}
+}
+
+@keyframes move-left-right {
+  from {color: rgba(255, 255, 255, 0.1);right: 300px;}
+  to {color: #FFFFFF; right: 0px;}
+}
+
+@keyframes move-bottom {
+  from {opacity: 0; top:-200px;}
+  to {opacity: 1; top: 0px;}
+}
+
+@keyframes move-right-left {
+  from {color: rgba(255, 255, 255, 0.1); left: 300px;}
+  to {color: #FFFFFF; left: 0px;}
+}
+
+@keyframes move-top {
+  from {top: 0px;}
+  to {top: -200px;}
+}
